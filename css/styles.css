@@ -148,11 +148,97 @@ body {
 
 /* media query */
 @media (max-width: 992px) {
-  .personal-details {
-    text-align: center;
+  .sections-title {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
   }
+  /* Pictures */
+
+  .profile {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+
+  .abilities-img, .hobbies-img{
+    width: 15em;
+  }
+
+
+  /* Top */
+  .navbar {
+    padding: 1em 2.5em;
+  }
+
+  .jumbotron {
+    padding: 0 0 2em 0;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  }
+
+  .jumbotron-container {
+    padding: 3em 0;
+  }
+
+  /* Profile */
+  .profile {
+    padding: 0 15rem;
+  }
+
+  .personal-details, .abilities-details {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .propic {
+    border-radius: 100%;
+    width: 15rem;
+  }
+
+  .details-row {
+    padding: 1rem 0;
+  }
+
+  .profile-row, .abilities-row {
+    padding-top: 2rem;
+    text-align: justify;
+  }
+
+  .educations-institutions {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .educations-time {
     text-align: center;
-    margin: 1.5rem;
+    margin: 1.5em;
+  }
+  /* Abilities */
+  .abilities {
+    padding: 1em 15em;
+    margin-bottom: 1em;
+  }
+
+  .right-abilities-img {
+    float: right;
+    width: 15em;
+    margin-left: 2em;
+  }
+
+  /* Working Experiences */
+  .working-ex {
+    text-align: center;
+  }
+
+  .card-deck {
+    padding: 0 3em;
+    margin: 0;
+  }
+
+
+  /* Contact */
+  .contact {
+    padding-bottom: 5em;
+  }
+
+  .contact-method {
+    margin: 2em 10em;
   }
 }
