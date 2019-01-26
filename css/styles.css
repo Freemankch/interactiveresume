@@ -1,0 +1,158 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dotted-hr {
+  color: #c2e9fb;
+  border-style: dotted none none none;
+  border-width: 5px;
+  width: 5%;
+}
+
+.sections-title {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.container-fluid {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+/* Pictures */
+
+.profile {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.abilities-img, .hobbies-img{
+  width: 15rem;
+}
+
+
+/* Top */
+.navbar {
+  padding: 1rem 2.5rem;
+}
+
+.tag-line {
+  text-align: center;
+}
+
+.jumbotron {
+  padding: 0 0 2rem 0;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.jumbotron-container {
+  padding: 3rem 0;
+}
+
+/* Body */
+#body {
+  text-align: center;
+}
+
+/* Profile */
+.profile {
+  padding: 0 15rem;
+}
+
+.personal-details, .abilities-details {
+  text-align: justify;
+  padding-top: 2rem;
+}
+.propic {
+  border-radius: 100%;
+  width: 15rem;
+}
+
+.details-row {
+  padding: 1rem 0;
+}
+
+.profile-row, .abilities-row {
+  padding-top: 2rem;
+  text-align: justify;
+}
+
+.educations-institutions {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Abilities */
+.abilities {
+  padding: 1rem 15rem;
+  margin-bottom: 1rem;
+}
+
+.right-abilities-img {
+  float: right;
+  width: 15rem;
+  margin-left: 2rem;
+}
+
+/* Working Experiences */
+.working-ex {
+  text-align: center;
+}
+
+.card-deck {
+  padding: 0 3rem;
+  margin: 0;
+}
+
+.card-body {
+  text-align: justify;
+}
+
+/* Volunteer Experiences */
+.card-volunteer {
+  padding: 0 10rem;
+  margin: 0;
+}
+
+.card-img-top {
+  height: 17rem;
+}
+
+/* Hobbies */
+.hobbies {
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  padding: 0 5rem 2rem;
+}
+
+.hobbies-title {
+  margin-top: 1rem;
+}
+
+.call-to-action {
+  font-weight: bold;
+  color: white;
+}
+
+/* Contact */
+.contact {
+  padding-bottom: 5rem;
+}
+
+.contact-method {
+  margin: 2rem 10rem;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  .personal-details {
+    text-align: center;
+  }
+  .educations-time {
+    text-align: center;
+    margin: 1.5rem;
+  }
+}
