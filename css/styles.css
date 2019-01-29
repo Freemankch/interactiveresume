@@ -5,6 +5,9 @@ body {
 nav {
   transition: .5s;
 }
+.navbar {
+  padding: 1em 3em 0.5em;
+}
 
 .active {
   text-decoration: underline;
@@ -85,10 +88,6 @@ nav {
 
 
 /* Top */
-.navbar {
-  padding: 1em 3em 0.5em;
-}
-
 .fixed-top {
   background-color: #90b0e3;
   opacity: 0.97;
@@ -209,7 +208,12 @@ nav {
 }
 
 /* media query */
-@media (max-width: 992px) {
+/* For lg */
+@media screen and (max-width: 992px) {
+  /*navbar*/
+  .navbar {
+    padding: 1em 0.5em 0.5em;
+  }
 
   /* profile */
   .personal-details {
@@ -237,15 +241,93 @@ nav {
 
   /*cards*/
   .card-deck {
-    padding: 0 25%;
+    padding: 0 23%;
   }
 
   /* hobbies */
+  .hobbies .row {
+    margin-left: 0;
+  }
   .hobbies .col-lg-4 {
     padding: 0 10%;
   }
 
   /* contact */
+  .contact-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-method .btn{
+    margin: 2%;
+  }
+}
+
+/* For sm */
+@media screen and (max-width: 500px) {
+  /* navbar */
+  .navbar {
+    padding: 1em 0.5em 0.5em;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+  /* profile */
+  .profile {
+    padding: 0;
+  }
+
+  .personal-details {
+    text-align: center;
+  }
+
+  .educations-time {
+    margin: 2% 0;
+  }
+
+  .educations-institutions {
+    margin: 1% -2% 1%;
+  }
+
+  /* abilities */
+  .abilities {
+    padding-left: : 0;
+    padding-right: 0;
+  }
+  #experience-img, #solving-img, #programming-img {
+    text-align: center;
+  }
+
+  .right-abilities-img {
+    float: none;
+  }
+
+  .abilities-details h5 {
+    text-align: center;
+  }
+
+  /*cards*/
+  .card-deck {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* hobbies */
+  .hobbies {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hobbies .col-lg-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* contact */
+  .contact-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .contact-method .btn{
     margin: 2%;
   }

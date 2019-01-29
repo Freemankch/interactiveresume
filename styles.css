@@ -209,7 +209,7 @@ nav {
 
 /* media query */
 /* For lg */
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   /*navbar*/
   .navbar {
     padding: 1em 0.5em 0.5em;
@@ -263,7 +263,7 @@ nav {
 }
 
 /* For sm */
-@media (max-width: 400px) {
+@media screen and (max-width: 500px) {
   /* navbar */
   .navbar {
     padding: 1em 0.5em 0.5em;
@@ -327,6 +327,7 @@ nav {
     margin-left: 0;
     margin-right: 0;
   }
+
   .contact-method .btn{
     margin: 2%;
   }
