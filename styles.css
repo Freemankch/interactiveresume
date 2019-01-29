@@ -246,6 +246,10 @@ nav {
   }
 
   /* contact */
+  .contact-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .contact-method .btn{
     margin: 2%;
   }
