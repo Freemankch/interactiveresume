@@ -263,12 +263,12 @@ nav {
 }
 
 /* For sm */
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   /* navbar */
   .navbar {
     padding: 1em 0.5em 0.5em;
   }
-  
+
   .container-fluid {
     padding: 0;
   }
