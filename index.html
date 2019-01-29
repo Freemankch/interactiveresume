@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael's Digital Profile</title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
@@ -15,249 +16,281 @@
 </head>
 
 <body>
-  <div id="top" class="jumbotron text-center">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Kwok Chin Hung</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#abilities">Abilities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experiences">Experiences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#hobbies">Hobbies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="jumbotron-container">
-      <h6>Welcome to</h6>
-      <h1>Michael's Interactive Resume</h1>
-      <br>
-      <p class="tag-line">Technology | Problem-Solver | Innovator</p>
-    </div>
-    <a class="btn btn-outline-light" href="#profile" role="button">Learn more</a>
-  </div>
-
-  <div id="body">
-    <div id="profile" class="profile">
-      <h1 class="sections-title">Profile</h1>
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="images/Personal Photo.jpeg" alt="" class="propic">
+  <div class="html-body">
+    <div id="top" class="jumbotron text-center">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Kwok Chin Hung</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" id="nav-profile">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item" id="nav-abilities">
+              <a class="nav-link" href="#abilities">Abilities</a>
+            </li>
+            <li class="nav-item" id="nav-experiences">
+              <a class="nav-link" href="#experiences">Experiences</a>
+            </li>
+            <li class="nav-item" id="nav-hobbies">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item" id="nav-contact">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-6 personal-details">
-          <h4>Details</h4>
-          <div class="row details-row">
-            <div class="col">
-              Full Name: <br>
-              Kwok Chin Hung <br>
-            </div>
-            <div class="col">
-              Nickname: <br>
-              Michael <br>
-            </div>
-          </div>
-          <div class="row details-row">
-            <div class="col">
-              Age: <br>
-              20 <br>
-            </div>
-            <div class="col">
-              Location: <br>
-              Hong Kong <br>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="profile-row">
-        <h4>About Me</h4>
-        <p>I am a energetic personal who loves learning new skills. I enjoy meeting new people and exploring new ideas. With the ethusiasm for innovative technology and business, I would like to pursure a career which I can integrate both my
-          interest.
-          Finding problems is also one of my interest. I would like to find solutions to different problems by my knowledge regarding new technology and business skills.</p>
-      </div>
-      <div class="profile-row">
-        <h4>Educations</h4>
-        <div class="row educations-institutions">
-          <div class="col-lg-4 educations-time">
-            <h5>University</h5>
-            SEP 2016 - PRESENT
-          </div>
-          <div class="col-lg-8">
-            <h5>Hong Kong University of Science and Technology</h5>
-            <p>Bachelor of Business Administration - ECONOMICS</p>
-            <p>Minor in Information Technology</p>
-          </div>
-        </div>
-        <div class="row educations-institutions">
-          <div class="col-lg-4 educations-time">
-            <h5>Secondary School</h5>
-            SEP 2010 - JUN 2016
-          </div>
-          <div class="col-lg-8">
-            <h5>The Chinese Foundation Secondary School</h5>
-            Hong Kong Diploma of Secondary Education(HKDSE) electives:
+      </nav>
+      <div class="jumbotron-container">
+        <h6 class="welcoming">Welcome to</h6>
+        <h1 class="web-title">Michael's Digital Profile</h1>
+        <br>
+        <div class="tag-line content-hidden">
+          <div class="tag-line-text">
             <ul>
-              <li>Economics</li>
-              <li>Information and Communication Technology</li>
+              <li>Tech Lover |</li>
+              <li>Problem Solver</li>
+              <li>| Innovator</li>
             </ul>
           </div>
         </div>
       </div>
+      <a class="btn btn-outline-light" href="#profile" role="button">Learn more</a>
     </div>
-    <div class="container-fluid">
-      <div id="abilities" class="abilities">
-        <h1 class="sections-title">Abilities</h1>
-        <div class="row abilities-row hideme">
-          <div class="col-lg-5">
-            <img class="abilities-img" src="images/analytics-4.png" alt="Economics-Analysis.png">
+
+    <div id="body">
+      <section id="profile">
+        <div class="profile">
+          <h1 class="sections-title">Profile</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="images/Personal Photo.jpeg" alt="" class="propic">
+            </div>
+            <div class="col-lg-6 personal-details">
+              <h4>Details</h4>
+              <div class="row details-row">
+                <div class="col">
+                  <h6>Full Name:</h6>
+                  Kwok Chin Hung <br>
+                </div>
+                <div class="col">
+                  <h6>Nickname:</h6>
+                  Michael <br>
+                </div>
+              </div>
+              <div class="row details-row">
+                <div class="col">
+                  <h6>Age:</h6>
+                  20 <br>
+                </div>
+                <div class="col">
+                  <h6>Location:</h6>
+                  Hong Kong <br>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-7 abilities-details">
-            <h5>Economics Analysis</h5>
-            <p>Having different Economics courses taken in HKUST and the experience of wokring as an Financial Analyst, I have the ability to identify trends by using different economics indicators.</p>
+          <div class="profile-row">
+            <h4>About Me</h4>
+            <p>I am an energetic personal who loves learning new skills. I enjoy meeting new people and exploring new ideas. With the ethusiasm for innovation, technology and business, I would like to pursure a career which I can integrate all my
+              interests.
+              Finding problems is also one of my interests. I would like to create solutions for problems by using my knowledges regarding new technology and my business skills.</p>
           </div>
-        </div>
-        <div class="row abilities-row hideme">
-          <div class="col">
-            <img class="right-abilities-img" src="images/programming.png" alt="Programming.png">
-            <div class=" abilities-details">
-              <h5>Programming</h5>
-              <h5>C++/Python/HTML/CSS/JavaScript</h5>
-              <p>With the study of IT minor, I have learnt different programming languages and how to use these languages to make different things.
-                With the ability to programme, I can develop different things to creat solutions to solve different problems.</p>
+          <div class="profile-row">
+            <h4>Educations</h4>
+            <div class="row educations-institutions">
+              <div class="col-lg-4 educations-time">
+                <h5>University</h5>
+                SEP 2016 - PRESENT
+              </div>
+              <div class="col-lg-8">
+                <h5>Hong Kong University of Science and Technology</h5>
+                <p>Bachelor of Business Administration - ECONOMICS</p>
+                <p>Minor in Information Technology</p>
+              </div>
+            </div>
+            <div class="row educations-institutions">
+              <div class="col-lg-4 educations-time">
+                <h5>Secondary School</h5>
+                SEP 2010 - JUN 2016
+              </div>
+              <div class="col-lg-8">
+                <h5>The Chinese Foundation Secondary School</h5>
+                Hong Kong Diploma of Secondary Education (HKDSE) electives:
+                <ul>
+                  <li>Economics</li>
+                  <li>Information and Communication Technology</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row abilities-row hideme">
-          <div class="col-lg-5">
-            <img class="abilities-img" src="images/solved.png" alt="Problem-Solving.png">
-          </div>
-          <div class="col-lg-7 abilities-details">
-            <h5>Problem Solving Skills</h5>
-            <p>With the knowledge and traning of programming, I am able to break down big problems into different small problems and solve them step by stpes.
-              Instead of solving the problem at once, I prefer valuating my solutions and improve them with my best afford.</p>
+      </section>
+      <section id="abilities">
+        <div class="container-fluid">
+          <div class="abilities">
+            <h1 class="sections-title">Abilities</h1>
+            <div class="row abilities-row hideme">
+              <div class="col-lg-5" id="experience-img">
+                <img class="abilities-img" src="images/analytics-4.png" alt="Economics-Analysis.png">
+              </div>
+              <div class="col-lg-7 abilities-details">
+                <h5>Economics Analysis</h5>
+                <p>Having different Economics courses taken in HKUST and the experience of wokring as an Financial Analyst, I have the ability to identify trends by using different economics indicators. I can also make decisions which can maximize
+                  profits.</p>
+              </div>
+            </div>
+            <div class="row abilities-row hideme">
+              <div class="col">
+                <div id="programming-img">
+                  <img class="right-abilities-img" src="images/programming.png" alt="Programming.png">
+                </div>
+                <div class="abilities-details">
+                  <h5>Programming</h5>
+                  <h5>C++/Python/HTML/CSS/JavaScript</h5>
+                  <p>With the study of IT minor, I have learnt different programming languages and how to use these languages to make different things.
+                    With the ability to programme, I can develop different things to creat solutions to solve different problems.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row abilities-row hideme">
+              <div class="col-lg-5" id="solving-img">
+                <img class="abilities-img" src="images/solved.png" alt="Problem-Solving.png">
+              </div>
+              <div class="col-lg-7 abilities-details">
+                <h5>Problem Solving Skills</h5>
+                <p>With the knowledge and traning of programming, I am able to break down big problems into different small problems and solve them step by stpes.
+                  Instead of solving the problem at once, I prefer valuating my solutions and improve them with my best afford.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div id="experiences" class="working-ex">
-      <h1 class="sections-title">Working Experiences</h1>
-      <div class="card-deck">
-        <div class="card shadow mb-5 bg-white rounded">
-          <div class="card-header">
-            <h4>Co-founder</h4>
+      </section>
+      <section id="experiences">
+        <div class="working-ex">
+          <h1 class="sections-title">Working Experiences</h1>
+          <div class="card-deck">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card shadow mb-5 bg-white rounded">
+                  <div class="card-header">
+                    <h4>Co-founder</h4>
+                    <br>
+                    <br>
+                    <h6 class="card-title">KILLTIME, KilltimeHK</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Co-founded a online platform which gathers student discount in Hong Kong. Acquired funcing from HKUST Entreprenuership Acceleration Fund.</p>
+                  </div>
+                  <p class="card-text"><small class="text-muted">SEP 2018 - JAN 2019</small></p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow mb-5 bg-white rounded">
+                  <div class="card-header">
+                    <h4>Investment Analyst (Intern)</h4>
+                    <h6 class="card-title">GET MDREAM Wealth Management Limited</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">One of the member of the investment team of the GET MDREAM Wealth Management Limited. Responsible for conducting weekly portfolio report and preparing weekly market updates to colleagues.</p>
+                  </div>
+                  <p class="card-text"><small class="text-muted">MAR 2018 - SEP 2018</small></p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card shadow mb-5 bg-white rounded">
+                  <div class="card-header">
+                    <h4>Wealth Management Consultant (Intern)</h4>
+                    <h6 class="card-title">GET MDREAM Wealth Management Limited</h6>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">Responsible for providing Financial Planning service for 15 clients, understanding their current financial status, and suggest varies solutions to clients, including insurance, funds and private funds.</p>
+                  </div>
+                  <p class="card-text"><small class="text-muted">FEB 2018 - SEP 2018</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="dotted-hr">
+        <div class="volunteer-ex">
+          <h1 class="sections-title">Volunteer Experiences</h1>
+          <div class="card-deck card-volunteer">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card shadow mb-5 bg-white rounded">
+                  <img src="https://www.startmeup.hk/wp-content/uploads/2019/01/Edtech.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">AI & EDUCATION</h5>
+                    <h6>STARTMEUPHK FESTIVAL 2019 CORE EVENT </h6>
+                    <p class="card-text">Responsible for setting up the event and managing the registration of the speakers, guests and attendee.</p>
+                    <br>
+                    <p class="card-text"><small class="text-muted">25 FEB 2019</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card shadow mb-5 bg-white rounded">
+                  <img src="https://whub.io/assets/startup-summit/logos/sis-colour.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">STARTUP IMPACT SUMMIT</h5>
+                    <h6>STARTMEUPHK FESTIVAL 2019 CORE EVENT </h6>
+                    <p class="card-text">Responsible for setting up the event and managing the Startup Village in the event. I was also responsible for maintaining the order of the schedule.</p>
+                    <p class="card-text"><small class="text-muted">25 FEB 2019</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hobbies">
+        <div class="container-fluid hobbies">
+          <div>
+            <h1 class="sections-title">Hobbies</h1>
+            <div class="row">
+              <div class="col-lg-4 hideme">
+                <img class="hobbies-img" src="images/idea-1.png" alt="">
+                <h3 class="hobbies-title">Innovations</h3>
+                <p class="hobbies-details">I would look for and attend different Startup events or conference. By joining those events, I can gain more innovative insights from smart people.</p>
+              </div>
+              <div class="col-lg-4 hideme">
+                <img class="hobbies-img" src="images/settings.png" alt="">
+                <h3 class="hobbies-title">Technology</h3>
+                <p class="hobbies-details">As a Tech enthusiast, I love browsing the lastest technology and see how we can utilise them to solve problems.</p>
+              </div>
+              <div class="col-lg-4 hideme">
+                <img class="hobbies-img" src="images/soccer.png" alt="">
+                <h3 class="hobbies-title">Football</h3>
+                <p class="hobbies-details">During my leisure time, I like playing or watching football with my friends. It is a great activity to gather with friends!</p>
+              </div>
+            </div>
             <br>
-            <br>
-            <h6 class="card-title">KILLTIME, KilltimeHK</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Co-founded a online platform which gathers student discount in Hong Kong. Acquired funcing from HKUST Entreprenuership Acceleration Fund.</p>
-          </div>
-          <div class="card-footer">
-            <p class="card-text"><small class="text-muted">SEP 2018 - JAN 2019</small></p>
           </div>
         </div>
-        <div class="card shadow mb-5 bg-white rounded">
-          <div class="card-header">
-            <h4>Investment Analyst (Intern)</h4>
-            <h6 class="card-title">GET MDREAM Wealth Management Limited</h6>
+      </section>
+      <section id="contact">
+        <div class="contact">
+          <h1 class="sections-title">Contact Me</h1>
+          <h6>"No Talk, All Actions"</h6>
+          <div class="row contact-method">
+            <div class="col-lg-3">
+              <a href="#" class="btn btn-outline-primary btn-lg"><i class="fas fa-phone contact-img"></i><br> +852 66864829</a>
+            </div>
+            <div class="col-lg-6">
+              <a href="mailto:chkwokmichael@gmail.com" class="btn btn-outline-primary btn-lg"><i class="fas fa-envelope contact-img"></i><br>chkwokmichael@gmail.com</a>
+            </div>
+            <div class="col-lg-3">
+              <a href="https://www.linkedin.com/in/chin-hung-kwok-07927b152" class="btn btn-outline-primary btn-lg"><i class="fab fa-linkedin contact-img"></i><br> Chin Hung Kwok</a>
+            </div>
           </div>
-          <div class="card-body">
-            <p class="card-text">One of the member of the investment team of the GET MDREAM Wealth Management Limited. Responsible for conducting weekly portfolio report and preparing weekly market updates to colleagues.</p>
-          </div>
-          <div class="card-footer">
-            <p class="card-text"><small class="text-muted">MAR 2018 - SEP 2018</small></p>
-          </div>
-        </div>
-        <div class="card shadow mb-5 bg-white rounded">
-          <div class="card-header">
-            <h4>Wealth Management Consultant (Intern)</h4>
-            <h6 class="card-title">GET MDREAM Wealth Management Limited</h6>
-          </div>
-          <div class="card-body">
-            <p class="card-text">Responsible for providing Financial Planning service for 15 clients, understanding their current financial status, and suggest varies solutions to clients, including insurance, funds and private funds.</p>
-          </div>
-          <div class="card-footer">
-            <p class="card-text"><small class="text-muted">FEB 2018 - SEP 2018</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr class="dotted-hr">
-    <div class="volunteer-ex">
-      <h1 class="sections-title">Volunteer Experiences</h1>
-      <div class="card-deck card-volunteer">
-        <div class="card shadow mb-5 bg-white rounded">
-          <img src="https://www.startmeup.hk/wp-content/uploads/2019/01/Edtech.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">AI & EDUCATION</h5>
-            <h6>STARTMEUPHK FESTIVAL 2019 CORE EVENT </h6>
-            <p class="card-text">Responsible for setting up the event and managing the registration of the speakers, guests and attendee.</p>
-            <br>
-            <p class="card-text"><small class="text-muted">25 FEB 2019</small></p>
-          </div>
-        </div>
-        <div class="card shadow mb-5 bg-white rounded">
-          <img src="https://whub.io/assets/startup-summit/logos/sis-colour.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">STARTUP IMPACT SUMMIT</h5>
-            <h6>STARTMEUPHK FESTIVAL 2019 CORE EVENT </h6>
-            <p class="card-text">Responsible for setting up the event and managing the Startup Village in the event. I was also responsible for maintaining the order of the schedule.</p>
-            <p class="card-text"><small class="text-muted">25 FEB 2019</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid hobbies">
-      <div id="hobbies">
-        <h1 class="sections-title">Hobbies</h1>
-        <div class="row">
-          <div class="col-lg-4 hideme">
-            <img class="hobbies-img" src="images/idea-1.png" alt="">
-            <h3 class="hobbies-title">Startups</h3>
-            <p>I would look for and attend different Startup events or conference. By joining those events, I can gain more innovative insights from smart people.</p>
-          </div>
-          <div class="col-lg-4 hideme">
-            <img class="hobbies-img" src="images/settings.png" alt="">
-            <h3 class="hobbies-title">Technology</h3>
-            <p>As a Tech enthusiast, I love browsing the lastest technology and see how we can utilise them to solve problems.</p>
-          </div>
-          <div class="col-lg-4 hideme">
-            <img class="hobbies-img" src="images/soccer.png" alt="">
-            <h3 class="hobbies-title">Football</h3>
-            <p>During my leisure time, I like playing or watching football with my friends. It is a great activity to gather with friends!</p>
-          </div>
-        </div>
-        <br>
-        <h4 class="call-to-action">Feel free to contact me if we share similar interests! Cannot wait to meet you!</h4>
-      </div>
-    </div>
-    <div id="contact" class="contact">
-      <h1 class="sections-title">Contact Me</h1>
-      <h6>"No Talk, All Actions"</h6>
-      <div class="row contact-method">
-        <div class="col">
-          <a href="#" class="btn btn-outline-primary btn-lg"><i class="fas fa-phone contact-img"></i><br> +852 66864829</a>
-        </div>
-        <div class="col">
-          <a href="mailto:chkwokmichael@gmail.com" class="btn btn-outline-primary btn-lg"><i class="fas fa-envelope contact-img"></i><br>chkwokmichael@gmail.com</a>
-        </div>
-        <div class="col">
-          <a href="https://www.linkedin.com/in/chin-hung-kwok-07927b152" class="btn btn-outline-primary btn-lg"><i class="fab fa-linkedin contact-img"></i><br> Chin Hung Kwok</a>
-        </div>
-      </div>
 
+        </div>
+      </section>
+
+      <p>@2019 Kwok</p>
     </div>
   </div>
 
@@ -266,10 +299,10 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  <!-- JS -->
-  <script src="index.js" charset="utf-8"></script>
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- JS -->
+  <script src="index.js" charset="utf-8"></script>
 </body>
 
 </html>

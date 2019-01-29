@@ -2,55 +2,106 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+nav {
+  transition: .5s;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 .dotted-hr {
-  color: #c2e9fb;
+  border-color: #90b0e3;
   border-style: dotted none none none;
   border-width: 5px;
   width: 5%;
 }
 
 .sections-title {
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
 }
 
 .container-fluid {
+  margin: 0;
   background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
 
-.hideme
-{
+.hideme {
     opacity:0;
 }
+
+.welcoming {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+.web-title {
+  animation-name: fadeIn-title;
+  animation-duration: 2.8s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn-title {
+  0% {opacity: 0;}
+  20% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.tag-line-text li {
+  display: inline-block;
+  opacity: 1;
+  transition: all 3.5s ease;
+}
+
+.tag-line-text ul {
+  padding: 0;
+}
+
+.tag-line-text li:nth-child(3) {
+  margin-right: 0;
+}
+
+.content-hidden .tag-line-text li {opacity: 0;}
+.content-hidden .tag-line-text li:nth-child(1) { transform: translate3d(-30px,0,0);}
+.content-hidden .tag-line-text li:nth-child(2) { transform: translate3d(0,20px,0);}
+.content-hidden .tag-line-text li:nth-child(3) { transform: translate3d(30px,0,0);}
+
 
 /* Pictures */
 
 .profile {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .abilities-img, .hobbies-img{
-  width: 15rem;
+  width: 15em;
 }
 
 
 /* Top */
 .navbar {
-  padding: 1rem 2.5rem;
+  padding: 1em 3em 0.5em;
 }
 
-.tag-line {
-  text-align: center;
+.fixed-top {
+  background-color: #90b0e3;
+  opacity: 0.97;
+  color: white;
 }
 
 .jumbotron {
-  padding: 0 0 2rem 0;
+  padding: 0 0 2em 0;
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
 .jumbotron-container {
-  padding: 3rem 0;
+  padding: 3em 0;
 }
 
 /* Body */
@@ -60,42 +111,50 @@ body {
 
 /* Profile */
 .profile {
-  padding: 0 15rem;
+  padding: 0 19%;
 }
 
 .personal-details, .abilities-details {
   text-align: justify;
-  padding-top: 2rem;
+  padding-top: 2em;
 }
 .propic {
   border-radius: 100%;
-  width: 15rem;
+  width: 15em;
 }
 
 .details-row {
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .profile-row, .abilities-row {
-  padding-top: 2rem;
+  padding-top: 2em;
   text-align: justify;
 }
 
 .educations-institutions {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 /* Abilities */
+.container-fluid {
+  padding-bottom: 1%;
+}
+
 .abilities {
-  padding: 1rem 15rem;
-  margin-bottom: 1rem;
+  padding: 1% 19%;
+  margin-bottom: 1%;
 }
 
 .right-abilities-img {
   float: right;
-  width: 15rem;
-  margin-left: 2rem;
+  width: 15em;
+  margin-left: 2%;
+}
+.container-fluid h5 {
+  font-weight: bold;
+  padding-bottom: 0.2em;
 }
 
 /* Working Experiences */
@@ -104,7 +163,7 @@ body {
 }
 
 .card-deck {
-  padding: 0 3rem;
+  padding: 0 3em;
   margin: 0;
 }
 
@@ -114,132 +173,80 @@ body {
 
 /* Volunteer Experiences */
 .card-volunteer {
-  padding: 0 10rem;
+  padding: 0 12em;
   margin: 0;
 }
 
 .card-img-top {
-  height: 17rem;
+  height: 17em;
 }
 
 /* Hobbies */
 .hobbies {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  padding: 0 5rem 2rem;
+  padding: 0 5em 2em;
 }
 
 .hobbies-title {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
-.call-to-action {
-  font-weight: bold;
-  color: white;
+.hobbies-details {
+  text-align: justify;
 }
 
 /* Contact */
 .contact {
-  padding-bottom: 5rem;
+  padding-bottom: 3em;
 }
 
 .contact-method {
-  margin: 2rem 10rem;
+  margin: 2em 10em 0.5em;
+}
+
+.contact.row {
+  padding-top: 1em;
 }
 
 /* media query */
 @media (max-width: 992px) {
-  .sections-title {
-    padding-top: 1em;
-    padding-bottom: 1.5em;
-  }
-  /* Pictures */
 
-  .profile {
-    margin-top: 1em;
-    margin-bottom: 3em;
-  }
-
-  .abilities-img, .hobbies-img{
-    width: 15em;
-  }
-
-
-  /* Top */
-  .navbar {
-    padding: 1em 2.5em;
-  }
-
-  .jumbotron {
-    padding: 0 0 2em 0;
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-  }
-
-  .jumbotron-container {
-    padding: 3em 0;
-  }
-
-  /* Profile */
-  .profile {
-    padding: 0 15em;
-  }
-
-  .personal-details, .abilities-details {
+  /* profile */
+  .personal-details {
     text-align: center;
-    padding-top: 2em;
   }
-  .propic {
-    border-radius: 100%;
-    width: 15em;
-  }
-
-  .details-row {
-    padding: 1em 0;
-  }
-
-  .profile-row, .abilities-row {
-    padding-top: 2em;
-    text-align: justify;
-  }
-
-  .educations-institutions {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-
   .educations-time {
-    text-align: center;
-    margin: 1.5em;
+    margin: 2% 0;
   }
-  /* Abilities */
-  .abilities {
-    padding: 1em 15em;
-    margin-bottom: 1em;
+  .educations-institutions {
+    margin: 1% -2% 1%;
+  }
+
+  /* abilities */
+  #experience-img, #solving-img, #programming-img {
     text-align: center;
   }
 
   .right-abilities-img {
-    float: right;
-    width: 15em;
-    margin-left: 2em;
+    float: none;
   }
 
-  /* Working Experiences */
-  .working-ex {
+  .abilities-details h5 {
     text-align: center;
   }
 
+  /*cards*/
   .card-deck {
-    padding: 0 3em;
-    margin: 0;
+    padding: 0 25%;
   }
 
-
-  /* Contact */
-  .contact {
-    padding-bottom: 5em;
+  /* hobbies */
+  .hobbies .col-lg-4 {
+    padding: 0 10%;
   }
 
-  .contact-method {
-    margin: 2em 10em;
+  /* contact */
+  .contact-method .btn{
+    margin: 2%;
   }
 }
