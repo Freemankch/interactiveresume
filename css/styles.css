@@ -263,24 +263,34 @@ nav {
 }
 
 /* For sm */
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   /* navbar */
   .navbar {
     padding: 1em 0.5em 0.5em;
   }
 
   .container-fluid {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
+
   /* profile */
   .profile {
     padding: 0;
+  }
+
+  .profile-row {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   .personal-details {
     text-align: center;
   }
 
+  .profile .row {
+    margin: 0;
+  }
   .educations-time {
     margin: 2% 0;
   }
@@ -288,11 +298,22 @@ nav {
   .educations-institutions {
     margin: 1% -2% 1%;
   }
+  .educations-institutions .col-lg-4{
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   /* abilities */
   .abilities {
-    padding-left: : 0;
+    padding-left: 0;
     padding-right: 0;
+  }
+
+  .abilities .row {
+    margin: 0;
+  }
+  .abilities-row .col {
+    padding: 0;
   }
   #experience-img, #solving-img, #programming-img {
     text-align: center;
@@ -306,10 +327,19 @@ nav {
     text-align: center;
   }
 
+  .abilities-details {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
   /*cards*/
   .card-deck {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .card-deck .row {
+    margin: 0;
   }
 
   /* hobbies */
@@ -317,9 +347,17 @@ nav {
     padding-left: 0;
     padding-right: 0;
   }
+  .hobbies .row {
+    margin: 0;
+  }
   .hobbies .col-lg-4 {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .hobbies-details {
+    padding-left: 3%;
+    padding-right: 3%;
   }
 
   /* contact */
